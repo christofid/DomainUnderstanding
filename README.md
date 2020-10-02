@@ -4,6 +4,7 @@ Authors: Dimitrios Christofidellis, Matteo Manica, Leonidas Georgopoulos and Han
 
 ## Usage 
 
+To use the model you need to provide to it some petrained word embeddings. In the context of our paper, we utilize the GloVE word embeddings which can be downloaded from  http://nlp.stanford.edu/data/glove.6B.zip
 
 * To train the model:
 
@@ -14,7 +15,7 @@ python3 execute.py --data_path DATA_PATH --order_type bfs --root_node ROOT_NODE 
 
 ```
 
- where DATA_PATH path is the path where the training dataset is located, ROOT_NODE is the root node of the bfs traveral, MODEL_PATH where the trained model is located and EMBEDDING_PATH  path where the pretrained embeddings are located
+ where DATA_PATH is the path where the training dataset is located, ROOT_NODE is the root node of the bfs traveral, MODEL_PATH is the path where the trained model is located and EMBEDDING_PATH is the path where the pretrained embeddings are located.
 
 
 
@@ -30,7 +31,8 @@ cd transformers
 python3  attention_visualizer.py --data_path DATA_PATH  --order_type bfs --root_node ROOT_NODE --model_path MODEL_PATH --embedding_path EMBEDDING_PATH
 
 ```
- where DATA_PATH path is the path where the training dataset is located, ROOT_NODE is the root node of the bfs traveral, MODEL_PATH where  the trained model is located and EMBEDDING_PATH  path where the pretrained embeddings are located
+ wwhere DATA_PATH is the path where the training dataset is located, ROOT_NODE is the root node of the bfs traveral, MODEL_PATH is the path where the trained model is located and EMBEDDING_PATH is the path where the pretrained embeddings are located.
+
 Once the model is loaded, the user can type any text snippet to test the model.
 
 
@@ -43,7 +45,8 @@ cd transformers
 python3  attention_based_entities_extractor.py --data_path DATA_PATH  --order_type bfs --root_node ROOT_NODE --model_path MODEL_PATH --embedding_path EMBEDDING_PATH
 
 ```
- where DATA_PATH path is the path where the training dataset is located, ROOT_NODE is the root node of the bfs traveral, MODEL_PATH where  the trained model is located and EMBEDDING_PATH  path where the pretrained embeddings are located
+where DATA_PATH is the path where the training dataset is located, ROOT_NODE is the root node of the bfs traveral, MODEL_PATH is the path where the trained model is located and EMBEDDING_PATH is the path where the pretrained embeddings are located.
+
 It produces the relation types and the entities of the testing instances of the dataset.
 
 
