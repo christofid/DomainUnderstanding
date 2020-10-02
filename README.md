@@ -4,8 +4,6 @@ Authors: Dimitrios Christofidellis, Matteo Manica, Leonidas Georgopoulos and Han
 
 ## Usage 
 
-To use the model you need to provide to it some petrained word embeddings. In the context of our paper, we utilize the GloVE word embeddings which can be downloaded from  http://nlp.stanford.edu/data/glove.6B.zip
-
 * To train the model:
 
 ```
@@ -60,5 +58,7 @@ python3  execute.py --data_path DATA_PATH  --predictions_path PREDICTIONS_PATH
 ```
 
 where DATA_PATH path is the path where the training dataset is located and PREDICTIONS_PATH is the path where all the predictions of the Transformers models have been stored.
+
+In the context of our paper, we utilize the GloVE petrained word embeddings which can be downloaded from  http://nlp.stanford.edu/data/glove.6B.zip . 
 
 
