@@ -7,7 +7,7 @@ Authors: Dimitrios Christofidellis, Matteo Manica, Leonidas Georgopoulos and Han
 * To train the model:
 
 ```
-cd transformers
+cd transformer
 
 python3 execute.py --data_path DATA_PATH --order_type bfs --root_node ROOT_NODE --embedding_path EMBEDDING_PATH  
 
@@ -24,7 +24,7 @@ The model by default have the parameters defined in the paper. In order to chang
 * To predict the relation types of a text snippet and visualize the respective attentions:
 
 ```
-cd transformers
+cd transformer
 
 python3  attention_visualizer.py --data_path DATA_PATH  --order_type bfs --root_node ROOT_NODE --model_path MODEL_PATH --embedding_path EMBEDDING_PATH
 
@@ -38,7 +38,7 @@ Once the model is loaded, the user can type any text snippet to test the model.
 
 
 ```
-cd transformers
+cd transformer
 
 python3  attention_based_entities_extractor.py --data_path DATA_PATH  --order_type bfs --root_node ROOT_NODE --model_path MODEL_PATH --embedding_path EMBEDDING_PATH
 
