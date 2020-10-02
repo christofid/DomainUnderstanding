@@ -1,10 +1,8 @@
-# DomainUnderstanding
-
 Pytorch implementation of domain understaning techniques that is described in `An Automated Domain Understanding Technique for Knowledge Graph Generation`
 
 Authors: Dimitrios Christofidellis, Matteo Manica, Leonidas Georgopoulos and Hans Vandierendonck
 
-# Usage 
+## Usage 
 
 
 * To train the model:
