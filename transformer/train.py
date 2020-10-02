@@ -21,7 +21,7 @@ def trainer(model, train_iterator, valid_iterator, optimizer, criterion, n_epoch
 
         if valid_loss < best_valid_loss and model_path is not None:
             best_valid_loss = valid_loss
-            torch.save(model, model_path)
+            torch.save(model.state_dict(), model_path)
 
         print(f'Epoch: {epoch + 1:02} | Time: {epoch_mins}m {epoch_secs}s')
         print(f'\tTrain Loss: {train_loss:.3f} | Train PPL: {math.exp(train_loss):7.3f}')
