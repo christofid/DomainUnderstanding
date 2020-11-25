@@ -48,11 +48,11 @@ def analyze_txt(txt, head, nlp, model, txt_lang, labels_lang, device, max_label_
 
     extract_relations(txt, translation, _attention, doc)
 
-    display_attention(txt, translation, attention, adj, doc, head=head)
+    display_attention(txt, translation, attention, adj, head=head)
 
 
 
-def display_attention(sentence, translation, attention, adj, doc, head):
+def display_attention(sentence, translation, attention, adj, head):
 
     _attention = attention.squeeze(0)[head].cpu().detach().numpy()
 
@@ -62,8 +62,6 @@ def display_attention(sentence, translation, attention, adj, doc, head):
 
         _attention = np.matmul(adj, np.transpose(_attention))
         _attention = np.transpose(_attention)
-
-        extract_relations(sentence, translation, _attention, doc)
 
         ax.matshow(_attention, cmap='gist_yarg')
 
