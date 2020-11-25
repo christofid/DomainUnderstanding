@@ -1,4 +1,4 @@
-Pytorch implementation of domain understaning techniques that is described in `An Automated Domain Understanding Technique for Knowledge Graph Generation`
+Pytorch implementation of domain understaning techniques that is described in `Understood in translation, transformers for domain understanding`
 
 Authors: Dimitrios Christofidellis, Matteo Manica, Leonidas Georgopoulos and Hans Vandierendonck
 
